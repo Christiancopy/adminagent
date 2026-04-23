@@ -1,0 +1,31 @@
+﻿{
+    "name":  "assistant-administratif-citoyen",
+    "version":  "1.0.0",
+    "description":  "Agent IA administratif pour le Benin (Node.js + Express + SQLite + LewisNote API)",
+    "main":  "server.js",
+    "scripts":  {
+                    "dev":  "node server.js",
+                    "start":  "node server.js",
+                    "netlify:dev":  "npx --yes netlify dev",
+                    "netlify:deploy":  "npx --yes netlify deploy",
+                    "netlify:deploy:prod":  "npx --yes netlify deploy --prod"
+                },
+    "keywords":  [
+                     "benin",
+                     "administration",
+                     "assistant",
+                     "ia",
+                     "express",
+                     "sqlite"
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "dependencies":  {
+                         "axios":  "^1.15.2",
+                         "dotenv":  "^17.4.2",
+                         "express":  "^5.2.1",
+                         "serverless-http":  "^4.0.0",
+                         "sqlite3":  "^6.0.1"
+                     }
+}

@@ -1,0 +1,10 @@
+﻿[build]
+  functions = "netlify/functions"
+
+[functions]
+  external_node_modules = ["sqlite3"]
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
