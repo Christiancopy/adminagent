@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "assistant-administratif-citoyen",
     "version":  "1.0.0",
     "description":  "Agent IA administratif pour le Benin (Node.js + Express + SQLite + LewisNote API)",
