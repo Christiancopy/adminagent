@@ -1,4 +1,4 @@
-﻿require('dotenv').config();
+require('dotenv').config();
 const express = require('express');
 const { initDatabase } = require('./database/db');
 const agentRoutes = require('./routes/agentRoutes');
@@ -11,6 +11,14 @@ const app = express();
 app.use(express.json());
 
 initDatabase();
+
+app.get('/', (_req, res) => {
+  res.json({
+    service: 'Assistant Administratif Citoyen',
+    status: 'running',
+    endpoints: ['/health', '/agent', '/translate', '/procedure', '/audio/tts', '/audio/transcribe']
+  });
+});
 
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', service: 'Assistant Administratif Citoyen' });
